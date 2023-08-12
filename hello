@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <windows.h>
+int main()
+{
+    char arr1[] = "How are you?";
+    char arr2[] = "############";
+    int left = 0;
+    int right = strlen(arr1) - 1;
+    printf("%s\n\n", arr2);
+    //for
+    for (left = 0, right = strlen(arr1) - 1;left <= right;left++, right--)
+    {
+        Sleep(1000);
+        arr2[left] = arr1[left];
+        arr2[right] = arr1[right];
+        printf("%s\n", arr2);
+    }
+    return 0;
+}
